@@ -2,10 +2,7 @@ import plotly.graph_objs as go
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 import pandas as pd
 import chart_studio.plotly as py  # we use this instead of plotly.plotly
-# import plotly.express as px
-# import chart_studio.tools as tls
 
-# tls.set_credentials_file(username='RojinD', api_key='btnunbtez4')
 
 data = dict(type='choropleth',
             locations=['AZ', 'CA', 'NY'],
@@ -38,7 +35,7 @@ print(layout)
 choromap2 = go.Figure(data=[data], layout=layout)
 # iplot(choromap2)
 
-# vedio numbert 64
+
 
 df = pd.read_csv('2014_world_GDP')
 print(df.head())
